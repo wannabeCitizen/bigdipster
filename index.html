@@ -11,9 +11,28 @@
                 the right side of the page */
                 overflow-x: hidden;
 
-                background-image: url('images/icon_62335.svg');
+                background-image: url('images/whiteboard.jpg');
                 background-repeat:no-repeat;
                 background-attachment:fixed;
+                background-position: center; 
+                background-size: cover;
+
+                font-size: 16pt;
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+
+            .lightbulb {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                /* this corrects for a ball that goes off
+                the right side of the page */
+                overflow-x: hidden;
+
+                background-image: url('images/icon_62335.svg');
+                background-repeat:no-repeat;
+                position: fixed;
                 background-position: -77% 95%; 
                 background-size: 60%;
 
@@ -56,7 +75,8 @@
             p {
                 background-color: #08327F;
                 text-indent: 2%;
-                padding: 0 15%;
+                padding: 0 5% 0 15%;
+                text-align: right;
                 margin: 0;
                 padding-bottom: 5%;
             }
@@ -149,6 +169,8 @@
         </style>
     </head>
     <body>
+
+        <div class="lightbulb"></div>
 
         <div class="hovertrap">
             <div class="ball">
