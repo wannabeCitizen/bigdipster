@@ -21,25 +21,6 @@
                 font-family: 'Source Sans Pro', sans-serif;
             }
 
-            .lightbulb {
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-                /* this corrects for a ball that goes off
-                the right side of the page */
-                overflow-x: hidden;
-
-                background-image: url('images/icon_62335.svg');
-                background-repeat:no-repeat;
-                position: fixed;
-                background-position: -51% 485%; 
-                background-size: 50%;
-
-                font-size: 16pt;
-                font-family: 'Source Sans Pro', sans-serif;
-            }
-
             h1 {
                 color: #FC0612;
                 font-family: 'Patua One', cursive;
@@ -52,11 +33,14 @@
             }
 
             h2 {
-                background-color: #08327F;
+                background: url('images/whiteboard_blur.jpg') no-repeat fixed;
 
-                font-size: 42pt;
+                font-size: 72pt;
                 text-align: center;
 
+                color: #FFFA06;
+                text-shadow: 5px 5px 0px #040404;
+                
                 padding-top: 5%;
                 padding-bottom: 2%;
                 margin: 0;
@@ -73,26 +57,31 @@
             }
 
             p {
-                background-color: #08327F;
+                background: url('images/whiteboard_blur.jpg') no-repeat fixed;
                 text-indent: 2%;
-                padding: 0 5% 0 15%;
-                text-align: right;
+                padding: 0 15%;
+                text-align: left;
                 margin: 0;
                 padding-bottom: 5%;
+                line-height: 35px;
+                color: rgb(243, 239, 237); 
             }
 
             .faq {
-                background-color: #08327F;
+                background: url('images/whiteboard_blur.jpg') no-repeat fixed;
                 padding: 0 15%;
                 margin: 0;
                 padding-bottom: 5%;
                 list-style: None;
+                text-align: left;
+                color: rgb(243, 239, 237); 
             }
 
             .faq>li:nth-child(odd) {
                 text-indent: -4%;
                 font-size: 28pt;
                 font-weight: 700;
+                font-style: italic;
             }
             .faq>li:nth-child(even) {
                 text-indent: 2%;
@@ -149,10 +138,10 @@
                 text-align: center;
                 height: 78px;
                 border-radius: 39px;
-                /* border: 2px solid black; */
+                border: 1px dashed grey;
                 line-height: 58pt;
                 text-align: center;
-                background-color: #aaa;
+                background-color: rgba(256,256,256,1);
             }
 
             .navigation {
@@ -165,12 +154,18 @@
                 visibility: hidden;
             }
 
-
+            .lightbulb {
+                position: absolute;
+                top: -4%;
+                left: 25%;
+                width: 50%;
+                /* height: 69%; */
+                opacity: 0.3;
+                z-index: -1;
+            }
         </style>
     </head>
     <body>
-
-        <div class="lightbulb"></div>
 
         <div class="hovertrap">
             <div class="ball">
@@ -183,7 +178,9 @@
             </div>
         </div>
 
-        <h1>EduWeb</h1>
+        <h1>EduWeb
+        <img src="images/icon_62335.svg" class="lightbulb"></img>
+        </h1>
 
         <h2>About</h2>
         <p>
