@@ -21,8 +21,29 @@
                 font-size: 16pt;
                 font-family: 'Source Sans Pro', sans-serif;
             }
+            pre {
+                color: #FC0612;
+                font-family: 'Patua One', cursive;
+                font-style: italic;
+                font-size: 42pt;
+                text-align: center;
+                text-shadow: 2px 2px 0px #08327F;
+                width: 100%;
+                padding: 1% 0;
+            }
 
             h1 {
+                color: #FC0612;
+                font-family: 'Patua One', cursive;
+                font-size: 90pt;
+                text-align: center;
+                font-weight: normal;
+                text-shadow: 5px 5px 0px #040404;
+                width: 100%;
+                padding: 15% 0;
+            }
+
+            /*h1 {
                 color: #111;
                 font-family: 'Patua One', cursive;
                 font-size: 85pt;
@@ -32,7 +53,7 @@
                 padding: 5% 0;
                 letter-spacing: 15px;
                 margin: 0 0;
-            }
+            }*/
 
             h2 {
                 background: url('images/whiteboard_blur.jpg') no-repeat fixed;
@@ -41,8 +62,7 @@
                 text-align: center;
 
                 color: #FFFA06;
-                text-shadow: 5px 5px 0px #040404;
-
+                text-shadow: 5px 5px 0px #040404; 
                 padding: 4% 0;
                 
                 margin: 0;
@@ -86,6 +106,20 @@
                 font-style: italic;
             }
             .faq>li:nth-child(even) {
+                text-indent: 2%;
+                padding-bottom: 4%;
+            }
+
+            .future {
+                background: url('images/whiteboard_blur.jpg') no-repeat fixed;
+                padding: 0 15%;
+                margin: 0;
+                padding-bottom: 5%;
+                list-style: None;
+                text-align: left;
+                color: rgb(243, 239, 237); 
+            }
+            .future>li {
                 text-indent: 2%;
                 padding-bottom: 4%;
             }
@@ -180,7 +214,7 @@
             </div>
         </div>
 
-<h1>About This Project and Our Organization</h1>
+<h1>About This Project</h1>
 
 <h2>The Curriculum</h2>
 
@@ -192,7 +226,7 @@
 
 <p>Being a curriculum that is entirely free, we strive to remove the burden on teachers and school districts to buy expensive, copyrighted materials for their classroom and instead spend money on classroom equipment that makes for more engaging educational environments.  Also, we recognize that not every school, teacher, or child has the same resources, and thus, hope to provide anyone interested in learning access to top-of-the-line educational materials regardless of their financial situation.  </p>
 
-<h1>Using our Website</h1>
+<pre>Using our Website</pre>
 
 <h2>Organizing Your Curriculum</h2>
 
@@ -218,19 +252,21 @@
 
 <p>Any and all content that is posted on our website is open for users to edit and all users are encouraged to add content as they find gaps in what is available.  While we'll maintain a set of content that is verified as accurate and appropriate, you can make customized copies of that content adding in your own knowledge and expertise to the material.  Though this will not be on immediate offer, we hope to eventually have a rating system so that expert teachers have a way of propagating their content out to other teachers and perhaps have their curricula added into our curated content. &lt;-"will we provide cloud space for teachers to upload handouts and other documentation?  might be a good idea but i don't know what sort of servers we'll need for that..."</p>
 
-<h1>Our Organization</h1>
+<pre>Our Organization</pre>
 
 <p>Collective Laboratories is a group of educators, scientists, coders, and caring citizens who tries to join our skills and efforts to complete projects in the public interest.  We should emphasize the word <em>collective</em> in our organization title as we are not exclusive, and thus feel anyone with the desire to contribute toward these same projects and goals is not only included as part of our effort, but will receive credit for their contribution.</p>
 
 <p>Currently, most of our contributors are based in Boulder, Colorado and Brooklyn, New York.  If you want to learn more about the individuals behind Collective Laboratories go to our Personnel Page.  [Should we create one of these as well and have 1 paragraph bios on there?]&lt;-"sure, i'm board for that" >> Isn't our name just CoLab?  </p>
 
-<h1>Our Plan for the Future of This Project</h1>
+<pre>The Future</pre>
 
-<p>While we are currently working on phase 1 of this project, which involves delivering a curriculum and a working web resource, we do hope to fill more needs of schools and teachers in the future.  Including, but not limited to: <br />
-+ <strong>Educational Kits</strong> that provide your classroom with the materials needed to complete many of our posted activities and labs. <br />
-+ <strong>Printing service</strong> for teachers who do not have the computer resources to make the online version of this curriculum a systematic option for their classes. <br />
-+ <strong>Data analysis and content suggestions</strong> based on the information we gather from your classroom practices, your students' performance and feedback, and other teachers' data.  This will allow us to participate in the effort to determine what works and what does not work in schools, and help teachers get in better resonance with their students' needs. <br />
-+ <strong>Expanded Curriculum</strong> for areas outside of the major sciences and mathematics.  We currently focus on this area because it is both in our domain of expertise and school systems are continually being pressured to improve STEM education outcomes; though, we are fully in support of the arts and humanities as well as participatory civic education, and hope in the future to support these areas as well.</p>
+<p style="padding-top: 2%;">While we are currently working on phase 1 of this project, which involves delivering a curriculum and a working web resource, we do hope to fill more needs of schools and teachers in the future.  Including, but not limited to: <br />
+<ol class="future">
+    <li>+ <strong>Educational Kits</strong> that provide your classroom with the materials needed to complete many of our posted activities and labs. </li>
+    <li>+<strong>Printing service</strong> for teachers who do not have the computer resources to make the online version of this curriculum a systematic option for their classes.</li>
+    <li>+<strong>Data analysis and content suggestions</strong> based on the information we gather from your classroom practices, your students' performance and feedback, and other teachers' data.  This will allow us to participate in the effort to determine what works and what does not work in schools, and help teachers get in better resonance with their students' needs. </li>
+    <li>+<strong>Expanded Curriculum</strong> for areas outside of the major sciences and mathematics.  We currently focus on this area because it is both in our domain of expertise and school systems are continually being pressured to improve STEM education outcomes; though, we are fully in support of the arts and humanities as well as participatory civic education, and hope in the future to support these areas as well.</p></li>
+</ol>
         <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script>
           var $navigation = $('.navigation');
