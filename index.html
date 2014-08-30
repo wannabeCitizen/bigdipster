@@ -119,7 +119,7 @@
                 color: #FC0612;
             }
 
-            .hovertrap:hover {
+            .hovertrap:hover, .hovertrap.pageenter {
                 right: -450px;
                 top: -450px;
                 border-radius: 500px;
@@ -169,7 +169,7 @@
     </head>
     <body>
 
-        <div class="hovertrap">
+        <div class="hovertrap pageenter">
             <div class="ball">
                     M
                     <ol class="navigation hidden">
@@ -242,7 +242,7 @@ Please send us an e-mail: <a href="mailto:modulearner@gmail.com">modulearner@gma
               });
             
           });
-	  $('#hovertrap').hover();
+	  $('#hovertrap').removeClass('pageenter');
         </script>
     </body>
 </html>
