@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script src="/static/js/d3.min.js" charset="utf-8"></script>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <script>
+            var linearNodes = {
+                { "name": "kinematics",
+                    "r" : 80 },
+                { "name" : "projectile motion", 
+                    "r" : 40 },
+                { "name": "Newton's Laws",
+                    "r": 80},
+                { "name": "incline planes",
+                    "r" : 60 },
+                { "name": "springs",
+                    "r": 60},
+                { "name": "conservation laws",
+                    "r": 80 },
+                {"name": "energy",
+                    "r": 60},
+                { "name": "momentum",
+                    "r": 60},
+                { "name": "friction",
+                    "r": 60},
+                { "name": "circular motion",
+                    "r": 80}
+            };
+            
+            var w=1200,
+            h = 800
+
+
+            var graph = d3.select("body").insert("svg:svg")
+            .attr("width", w)
+            .attr("height", h)
+            .append("svg:g");
+            
+            graph.selectAll("circle")
+            .data(linearNodes)
+            .eneter().append("svg:circle")
+            .attr("r", function(d) { return d.r; })
+            .attr("cx", "300")
+
+        </script>
+
+</html>
